@@ -21,8 +21,6 @@ public class Step {
 	private String statement;
 	@Column(name = "step_url")
 	private String stepUrl;
-	@Column(name = "type")
-	private String stepType;
 	@Column(name = "s_id")
 	private Integer sId;
 	
@@ -39,12 +37,7 @@ public class Step {
 	public void setStepUrl(String stepUrl) {
 		this.stepUrl = stepUrl;
 	}
-	public String getStepType() {
-		return stepType;
-	}
-	public void setStepType(String stepType) {
-		this.stepType = stepType;
-	}
+	
 	public Integer getSt_id() {
 		return st_id;
 	}

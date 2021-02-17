@@ -51,8 +51,6 @@ public class Software {
 	private Integer operatingBit;
 	@Column(name = "os")
 	private String os;
-	@Column(name = "system_req")
-	private String systemReq;
 	@OneToMany( cascade = CascadeType.ALL)
 	@JoinColumn(name= "s_id", referencedColumnName = "s_id")
 	private List<Step> steps;
@@ -148,12 +146,6 @@ public class Software {
 	}
 	public void setOs(String os) {
 		this.os = os;
-	}
-	public String getSystemReq() {
-		return systemReq;
-	}
-	public void setSystemReq(String systemReq) {
-		this.systemReq = systemReq;
 	}
 	public List<Step> getSteps() {
 		return steps;

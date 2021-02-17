@@ -30,7 +30,6 @@ public class SoftwareService {
 		software.setGraphics(softwarePayloadBean.getSoftware().getGraphics());
 		software.setOperatingBit(softwarePayloadBean.getSoftware().getOperatingBit());
 		software.setOs(softwarePayloadBean.getSoftware().getOs());
-		software.setSystemReq(softwarePayloadBean.getSoftware().getSystemReq());
 		List<Step> steps = softwarePayloadBean.getSoftware().getSteps();
 		software.setSteps(steps);
 		
